@@ -1,0 +1,194 @@
+{
+  "version": 1.0,
+  "title": "Assignment 3: More types and variable modifiers",
+  "quiz": [
+    {
+      "question": "Which of these following types does not have a size of 4 bytes?",
+      "options": [
+        {
+          "value": "`int`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`string`",
+          "answer": true,
+          "explanation": "Correct! `int`, `float`, and `unsigned int` are all 4 bytes, but the `string` type is 8 bytes."
+        },
+        {
+          "value": "`float`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`unsigned int`",
+          "answer": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "question": "How many bytes are used to store `\"Hello\"` as a `string`?",
+      "options": [
+        {
+          "value": "8",
+          "answer": true,
+          "explanation": "Correct! Regardless of the length of a `string`, it always takes up 8 bytes."
+        },
+        {
+          "value": "4",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "5",
+          "answer": false,
+          "explanation": "While the length of the `string` is 5 letters, the size is not equal to the length."
+        },
+        {
+          "value": "1",
+          "answer": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "question": "How many bytes are used to store `\"Hello I'm learning about variable sizes.\"` as a `string`?",
+      "options": [
+        {
+          "value": "8",
+          "answer": true,
+          "explanation": "Correct! Regardless of the length of a `string`, it always takes up 8 bytes."
+        },
+        {
+          "value": "4",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "40",
+          "answer": false,
+          "explanation": "While the length of the `string` is 5 letters, the size is not equal to the length."
+        },
+        {
+          "value": "42",
+          "answer": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "question": "What would be the best type to use to store someone's age in years?",
+      "options": [
+        {
+          "value": "`string`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`int`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`float`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`unsigned int`",
+          "answer": true,
+          "explanation": "Correct! `unsigned int` would be the correct choice as a person's ages in years can only be positive integers."
+        }
+      ]
+    },
+    {
+      "question": "All `unsigned int` values can also be represented by `int`.",
+      "options": [
+        {
+          "value": "True",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "False",
+          "answer": true,
+          "explanation": "Correct! The largest `unsigned int` value is `4,294,967,295`, but the largest `int` value is `2,147,483,647`. An `int`, however, can also represent negative numbers, where as the smallest `unsigned int` is `0`."
+        }
+      ]
+    },
+    {
+      "question": "Which line uses `const` in the proper manner?",
+      "options": [
+        {
+          "value": "`const int = 3;`",
+          "answer": true,
+          "explanation": "Correct! The `const` qualifier comes before the type."
+        },
+        {
+          "value": "`int const = 3;`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`int = const 3;`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`int = 3 const;`",
+          "answer": false,
+          "explanation": ""
+        }
+      ]
+    }
+  ],
+  "fix_code": [
+    {
+      "question": "This code isn't compiling correctly! Can you help fix it? Be sure to also address any formatting errors.",
+      "hints": [
+        {
+          "line_number": 6,
+          "hint": "No space in the type `unsigned int`."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't compiling correctly! Can you help fix it? Be sure to also address any formatting errors.",
+      "hints": [
+        {
+          "line_number": 6,
+          "hint": "Attempting to assign a new value to a `const` value variable."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't compiling correctly! Can you help fix it? Be sure to also address any formatting errors.",
+      "hints": [
+        {
+          "line_number": 6,
+          "hint": "The `const` qualifier is placed after the variable name instead of before."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't running correctly! Can you help fix it? Be sure to also address any formatting or syntax errors.",
+      "hints": [
+        {
+          "line_number": 6,
+          "hint": "`unsigned int` cannot represent negative numbers. Perhaps you need a different type!"
+        }
+      ]
+    }
+  ],
+  "invent_code": [
+    {
+      "question": "Update this code to use `const` where you see fit. Then, fill out the memory table. For the memory table, assume the user input is `87.31`.",
+      "hints": []
+    },
+    {
+      "question": "Write a program that acts as a basic calculator (we'll stick to only an integer calculator for now).\n\n1. Prompt the user for two integers.\n2. Compute and store their sum, product, quotient, and the difference.\n3. Print out each stored value.",
+      "hints": []
+    }
+  ]
+}
