@@ -4,12 +4,10 @@ using namespace std;
 
 int main() {
   int original;
-  float original_float;
-  original_float = 13.5;
   cout << "Please enter a integer: ";
   cin >> original;
-  int clone = original + 14;
-  int product = original * clone;
+  const int clone = original + 14;
+  const int product = original * clone;
   cout << "The product is: " << product;
 }
 
@@ -17,4 +15,8 @@ int main() {
 Type   | Name     | Value   | Size
 ------ | -------- | ------- | ------
        |          |         |
+  int   original    87.31     4
+  int   clone        101     4
+  int   product      8787     4
+
 */
