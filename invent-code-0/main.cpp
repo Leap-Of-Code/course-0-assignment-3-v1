@@ -6,7 +6,7 @@ int main() {
   int original;
   float original_float;
   original_float = 13.5;
-  cout << "Please enter a integer: ";
+  cout << "Please enter a number: ";
   cin >> original;
   int clone = original + 14;
   int product = original * clone;
