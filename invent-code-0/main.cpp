@@ -16,5 +16,11 @@ int main() {
 /*
 Type   | Name     | Value   | Size
 ------ | -------- | ------- | ------
-       |          |         |
+int                         | 4
+         original    87.31    4
+float.   orignal_float 13.5.  4         
+int      clone       27.5     4
+int      product    2,401.025 4
+
+
 */
