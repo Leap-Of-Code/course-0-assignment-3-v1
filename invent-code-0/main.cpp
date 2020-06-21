@@ -13,8 +13,3 @@ int main() {
   cout << "The product is: " << product;
 }
 
-/*
-Type   | Name     | Value   | Size
------- | -------- | ------- | ------
-       |          |         |
-*/
