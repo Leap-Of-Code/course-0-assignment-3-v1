@@ -9,5 +9,5 @@ int main() {
   float gpa = 3.7;
 
   cout << name << " is " << age << " and attends the " << school_name;
-  cout << ". they currently have a gpa of " << gpa;
+  cout << ". They currently have a gpa of " << gpa;
 }
