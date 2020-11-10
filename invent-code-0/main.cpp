@@ -4,8 +4,6 @@ using namespace std;
 
 int main() {
   int original;
-  float original_float;
-  original_float = 13.5;
   cout << "Please enter a integer: ";
   cin >> original;
   int clone = original + 14;
@@ -16,5 +14,8 @@ int main() {
 /*
 Type   | Name     | Value   | Size
 ------ | -------- | ------- | ------
-       |          |         |
+int   |   original     |    ?     | 4
+float | original_float     | 13.5.   | 4
+int | clone     | ? + 14   | 4
+int | product    | ?(? + 14)   | 4
 */
